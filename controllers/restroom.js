@@ -67,16 +67,17 @@ const create = (req, res) => {
 
 // Updates the restroom in the db, but not in the city
 const update = (req, res) => {
-     db.Restroom.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedRestroom) => {
-          if (err) {
-            return res.status(400).json({ status: 400, error:'Something went wrong, please try again.'});
-          }
-          updatedRestroom.save((err, savedRestroom) => {
-            if (err) return res.json(err);
-          });
-          res.json(updatedRestroom);
-     });
+  db.Restroom.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedRestroom) => {
+    if (err) {
+      return res.status(400).json({ status: 400, error:'Something went wrong, please try again.'});
+    }
+    updatedRestroom.save((err, savedRestroom) => {
+      if (err) return res.json(err);
+    });
+    res.json(updatedRestroom);
+  });
 };
+
 
 // const destroy = (req, res) => {
 //      db.Restroom.findByIdAndDelete(req.params.id, (err, deletedRestroom) => {

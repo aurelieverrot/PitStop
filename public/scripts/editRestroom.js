@@ -91,8 +91,8 @@ deleteForeverButton.addEventListener('click', (e) => {
   })
   .catch((err) => console.log(err));
 
-  // alert('Hope you meant it! It\'s gone FOREVER!');
-  // window.location = '/';
+  alert('Hope you meant it! It\'s gone FOREVER!');
+  window.location = '/';
 });
 
 // /delete

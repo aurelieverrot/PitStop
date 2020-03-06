@@ -46,6 +46,7 @@ const destroy = (req, res) => {
         return res.status(400).json({ status: 400, error: "Something went wrong, please try again!"});
       };
 
+      // Restroom to remove from City db
       const restroomToRemove = foundCity.restrooms.id(req.params.id);
       restroomToRemove.remove();
 
@@ -53,49 +54,20 @@ const destroy = (req, res) => {
         if (err) return res.status(400).json({ status: 400, error: "Something's wrong, please try again."});
 
         // Go to the original Restroom from the Restroom collection and delete it!
-        db.Restroom.findById(req.params.id, (err, deletedRestroom) => {
+        db.Restroom.findById(req.params.id, (err, restroomToDelete) => {
           if (err) return res.status(400).json({ status: 400, error: "Something's wrong, please try again."});
 
-          res.json(deletedRestroom);
+          restroomToDelete.remove();
+
+          res.json(restroomToDelete);
+
         });
       });
     });
   });
+//  alert('Hope you meant it! It\'s gone FOREVER!');
+//  window.location = '/';
 };
-
-// foundCity.save((err, savedCity) => {
-//   if (err) return res.status(400).json({status: 400, error: 'Something went wrong, please try again'});
-
-//   // Now we need to delete the original Post from the Post collection
-//   db.Post.findByIdAndDelete(req.params.postId, (err, deletedPost) => {
-//     if (err) return res.status(400).json({status: 400, error: 'Something went wrong, please try again'});
-//     res.json(deletedPost);
-
-
-// const destroy = (req, res) => {
-//   db.City.findOne({ cityState: req.body.cityState }, (err, foundCity)=> {
-//     if (err) {
-//       return res.status(400).json({ status: 400, error: "Something went wrong, please try again!"});
-//     };
-//     console.log(foundCity);
-//     for (let i = 0; i < foundCity.restrooms.length; i++) {
-//       const targetRestroom = foundCity.restrooms[i];
-//       if (foundCity.restrooms[i].id === req.params.id) {
-//         targetRestroom.remove();
-//       }
-//       else {
-//         console.log("Nope, try again!");
-//       }
-//     };
-
-//     foundCity.save((err, savedCity) => {
-//       if (err) return res.status(400).json({ status: 400, error: 'Something went wrong, please try again'});
-    
-//       console.log(savedCity);
-//     });
-    
-//   });
-// };
 
 module.exports = {
   index,
