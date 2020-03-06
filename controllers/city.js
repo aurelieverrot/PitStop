@@ -24,7 +24,6 @@ const update = (req, res) => {
     };
 
     foundCity.save((err, savedCity) => {
-      // TODO expand error response
       if (err) return res.json(err);
 
       res.json(savedCity); 

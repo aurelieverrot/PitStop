@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Materialize CSS -->
-     <link type="text/css" rel="stylesheet" href="/styles/materialize.css"  media="screen,projection"/>
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="/styles/materialize.css"  media="screen,projection"/>
 
-     <!-- Custom CSS -->
-     <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
 
-     <!-- Google Icons -->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-     <!-- Materialize JS -->
-     <script defer type="text/javascript" src="/scripts/materialize.min.js"></script>
+    <!-- Materialize JS -->
+    <script defer type="text/javascript" src="/scripts/materialize.min.js"></script>
 
-     <!-- Custom JS -->
-     <script defer type="text/javascript" src="scripts/search.js"></script>
+    <!-- Custom JS -->
+    <script defer type="text/javascript" src="scripts/search.js"></script>
 
-     <title>PitStop</title>
-</head>
-<body id="index-page">
-     <!-- NAV BAR -->
-     <header>
-          <nav>
-               <div class="nav-wrapper #ff5722 deep-orange">
-                    <a href="/" class="brand-logo">PitStop</a>
-                    <ul id="nav-mobile" class="right">
-                    <li><a href="/restrooms/new">Add New</a></li>
-                    </ul>
-               </div>
-          </nav>
-     </header>
+    <title>PitStop</title>
+  </head>
+  <body id="index-page">
+    <!-- NAV BAR -->
+    <header>
+      <nav>
+        <div class="nav-wrapper #ff5722 deep-orange lighten-2">
+          <a href="/" class="brand-logo">PitStop</a>
+          <ul id="nav-mobile" class="right deep-orange lighten-3">
+          <li><a href="/restrooms/new">Add New</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-     <!-- MAIN BODY -->
-     <main id="main-index">
-          <div id="city_background" class="container">
-               <div><p class="pitstop-logo brand-logo">PitStop</p>
-                    <p class="pitstop-text">Find restrooms publicly accessible</p>
-               </div>
-               <div id="search_card" class="col s12 m6">
-                    <form class="searchRestrooms col s6 index-card-content white-text">
-                         <div id="search_container" class="search_container">
-                              <input id="search_bar" placeholder="San Francisco, CA">
-                                
-                         </div>  
-                         <button id="index-search-button" class="btn waves-effect waves-light" type="submit" name="action">Find me restrooms
-                              <i class="material-icons right">send</i>
-                         </button>     
-                    </form>
-               </div>
+    <!-- MAIN BODY -->
+    <main id="main-index">
+      <div id="city_background" class="container">
+        <div>
+          <p class="pitstop-logo brand-logo">PitStop</p>
+          <p class="pitstop-text">Find restrooms publicly accessible</p>
+        </div>
+        <div id="search_card" class="col s12 m6">
+          <form class="searchRestrooms col s6 index-card-content white-text">
+            <div id="search_container" class="search_container">
+                <input id="search_bar" placeholder="San Francisco, CA">
+                  
+            </div>  
+            <button id="index-search-button" class="btn waves-effect waves-light" type="submit" name="action">Find me restrooms
+                <i class="material-icons right">send</i>
+            </button>     
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer #00acc1 teal lighten-2">
+      <div class="footer-copyright #00acc1 teal lighten-2">
+          <div class="container #00acc1 teal lighten-2">
+            <p>© 2020 Copyright</p>
           </div>
-     </main>
-
-     <!-- FOOTER -->
-     <footer class="page-footer #00acc1 cyan darken-1">
-          <div class="footer-copyright #00acc1 cyan darken-1">
-               <div class="container #00acc1 cyan darken-1">
-                    © 2020 Copyright
-               </div>
-          </div>
-     </footer>  
-</body>
+      </div>
+    </footer>  
+  </body>
 </html>

@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- jQuery -->
-     <!-- <script defer src="/node_modules/jquery/dist/jquery.min.js"></script> -->
-     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <!-- Show JS -->
-     <script defer type="text/javascript" src="/scripts/getRestrooms.js"></script>
-     <!-- Materialize JS -->
-     <script defer type="text/javascript" src="/scripts/materialize.min.js"></script>
-     <!-- Materialize CSS -->
-     <link type="text/css" rel="stylesheet" href="/styles/materialize.css"  media="screen,projection"/>
-     <!-- Custom CSS -->
-     <link type="text/css" rel="stylesheet" href="/styles/styles.css">
-     <!-- Google Icons -->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-     <title>Restroom</title>
-</head>
-<body>
-     <header>
-          <nav>
-               <div class="nav-wrapper #ff5722 deep-orange">
-                    <a href="/restrooms/index" class="brand-logo">PitStop</a>
-                    <ul id="nav-mobile" class="right">
-                    <li><a href="/restrooms/new">Add New</a></li>
-                    </ul>
-               </div>
-          </nav>
-     </header>
-
-     <main id="restrooms-container">
-       <div class="row">
-            <div id="restrooms-list">
-                <div id="restroom-cards" class="col s12">
-                      <!-- restroom cards // scripts.js -->
-                </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <!-- <script defer src="/node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Show JS -->
+    <script defer type="text/javascript" src="/scripts/getRestrooms.js"></script>
+    <!-- Materialize JS -->
+    <script defer type="text/javascript" src="/scripts/materialize.min.js"></script>
+    <!-- Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="/styles/materialize.css"  media="screen,projection"/>
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="/styles/styles.css">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Restroom</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper #ff5722 deep-orange">
+          <a href="/restrooms/index" class="brand-logo">PitStop</a>
+          <ul id="nav-mobile" class="right">
+          <li><a href="/restrooms/new">Add New</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <main id="restrooms-container">
+        <div class="row">
+          <div id="restrooms-list">
+            <div id="restroom-cards" class="col s12">
             </div>
           </div>
-
-          <div class="container">
-               <div id="restroom-cards" class="col s9"></div>
-          </div>
-     </main>
-
-     <footer class="page-footer #00acc1 cyan darken-1">
-          <div class="footer-copyright #00acc1 cyan darken-1">
-            <div class="container #00acc1 cyan darken-1">
+        </div>
+        <div class="container">
+          <div id="restroom-cards" class="col s9"></div>
+        </div>
+      </main>
+      <footer class="page-footer #00acc1 cyan darken-1">
+        <div class="footer-copyright #00acc1 cyan darken-1">
+          <div class="container #00acc1 cyan darken-1">
             <p>© 2020 Copyright</p>
-            </div>
           </div>
-     </footer>
-      
-</body>
+        </div>
+      </footer>
+  </body>
 </html>
-
-
-
-
-
-

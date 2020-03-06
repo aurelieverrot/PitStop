@@ -3,131 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Materialize CSS -->
   <link type="text/css" rel="stylesheet" href="/styles/materialize.css"  media="screen,projection"/>
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/styles/styles.css">
-
   <!-- Google Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <!-- Materialize JS -->
   <script defer type="text/javascript" src="/scripts/materialize.min.js"></script>
-
   <!-- Custom JS -->
   <script defer type="text/javascript" src="/scripts/editRestroom.js"></script>
-
   <title>Edit Restroom</title>
 </head>
-
 <body>
   <header>
     <nav>
-      <div class="nav-wrapper #ff5722 deep-orange">
+      <div class="nav-wrapper #ff5722 deep-orange lighten-2">
         <a href="/" class="brand-logo">PitStop</a>
-        <ul id="nav-mobile" class="right">
+        <ul id="nav-mobile" class="right deep-orange lighten-3">
         <li><a href="/restrooms/new">Add New</a></li>
         </ul>
       </div>
     </nav>
   </header>
-
   <!-- FORM -->
   <main id="edit-main">
     <div class="container">
       <form class="col s12" id="editRestroom">
         <div class="row">
+          <h4>Edit or Delete a Location</h4>
           <!-- Location Name -->
           <div class="input-field col s12">
             <input type="text" value="" placeholder="16th & Valencia" id="location_name" class="validate">
             <label for="location_name">Location Name</label>
           </div>
-
           <!-- Street Address -->
           <div class="input-field col s12">
             <input type="text" placeholder="1237 Galaxia Drive" value="" id="street_name" class="validate">
             <label for="street_name">Street Name</label>
           </div>
-
-          
           <!-- City & State -->
           <div class="input-field col s12">
             <input type="text" placeholder="San Francisco, CA" value="" id="city_name">
             <label for="city_name">City</label>
           </div>
-          
           <!-- Country -->
           <div class="input-field col s12">
             <input type="text" placeholder="USA" value="" id="country">
             <label for="country">Country</label>
           </div>
-
           <!-- Directions -->
           <div class="input-field col s12">
             <input type="text" placeholder="In the back corner next to the bar." id="directions" value="">
             <label for="directions">Directions</label>
           </div>
-          
           <!-- Features -->
           <p id="edit-features">
             <label for="changing_station">
               <input type="checkbox" name="changing_station" id="changing_station" value="true"/>
               <span>Changing Tables</span>
           </label>
-
           <label for="gender_neutral">
             <input type="checkbox" name="gender_neutral" id="gender_neutral" value="true"/>
             <span>Gender Neutral</span>
           </label>
-          
           <label for="accessible">
             <input type="checkbox" name="accessible" id="accessible" value="true"/>
             <span>Accessible</span>
           </label>
-
           <label for="hours">
             <input type="checkbox" name="hours" id="hours" value="true"/>
             <span>24-Hour</span>
           </label>
-
           <label for="req_purchase">
             <input type="checkbox" name="req_purchase" id="req_purchase" value="true"/>
             <span>Requires Purchase</span>
           </label>
-
           <label for="sanitary_products">
             <input type="checkbox" name="sanitary_products" id="sanitary_products" value="true"/>
             <span>Sanitary Products Available</span>
           </label>
           </p>
-          
           <div id="button-container">
-
             <!-- Submit Button -->
-            <button id="edit-submit-button" class="btn waves-effect waves-light" type="submit" name="action">
+            <button id="edit-submit-button" class="btn waves-effect waves-light teal lighten-2" type="submit" name="action">
               Submit Edit
               <i class="material-icons right">send</i>
             </button>
-
             <!-- Delete Button -->
             <button type="button" id="delete-button" class="btn waves-effect waves-light red lighten-1 right" name="delete">
               Delete Forever!
               <i class="material-icons right">delete_forever</i>
             </button>
-
           </div>
-    
         </div>
       </form>
-      
     </div>
   </main>
-
-    <footer class="page-footer #00acc1 cyan darken-1">
-      <div class="footer-copyright #00acc1 cyan darken-1">
-        <div class="container #00acc1 cyan darken-1">
+  <footer class="page-footer #00acc1 teal lighten-2">
+    <div class="footer-copyright #00acc1 teal lighten-2">
+        <div class="container #00acc1 teal lighten-2">
         <p>© 2020 Copyright</p>
         </div>
       </div>
