@@ -78,18 +78,18 @@ const update = (req, res) => {
      });
 };
 
-const destroy = (req, res) => {
-     db.Restroom.findByIdAndDelete(req.params.id, (err, deletedRestroom) => {
-          if (err) return res.status(400).json({ status: 400, error: 'Something went wrong, please try again.' });
+// const destroy = (req, res) => {
+//      db.Restroom.findByIdAndDelete(req.params.id, (err, deletedRestroom) => {
+//           if (err) return res.status(400).json({ status: 400, error: 'Something went wrong, please try again.' });
 
-          res.json(deletedRestroom);
-     });
-};
+//           res.json(deletedRestroom);
+//      });
+// };
 
 module.exports = {
      index,
      show,
      create,
      update,
-     destroy
+    //  destroy
 };
