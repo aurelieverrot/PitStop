@@ -1,12 +1,11 @@
 # PitStop
 
 ## Presentation
-
 Life is full of surprises. And sometimes, it can be really useful to know where is located the nearest restrooms!
 PitStop can give you a list of restrooms in your city, and its database lives thanks to the community: users can add, edit and delete restrooms to keep the list up to date!
 
 
->>>>>>>>> INDEX SCREENSHOT
+![Index](assets/Screen Shot Index.png)
 
 
 ## Technologies Used
@@ -27,11 +26,11 @@ With PitStop you can:
 * Delete a restroom
 
 
-## Planning
->>>>>>> pictures of our draft
+## How it is built
+![Models_erd](assets/Screen Shot Models and ERD.png)
+
 
 ## Planned Features
-
 Essential features:
 * Making the search bar in the home page working: should grab a city name in the input and search all cities in this city.
 * Show a map in the card reveal using Google Map API 

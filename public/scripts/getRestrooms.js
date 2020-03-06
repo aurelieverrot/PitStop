@@ -8,11 +8,6 @@ function getRestrooms() {
   .then(json => render(json))
   .catch(err => console.log(err))
 };
-// Commented out getRestrooms(); because we don't want to
-// invoke it in every instance of scripts.js loading
-
-// Instead, we want to populate the page with restrooms 
-// depending on the cityName given during the query.
 
 getRestrooms();
 
@@ -25,7 +20,6 @@ function render(restrooms) {
 // Creates a restroom template
 function getRestroomTemplate(restroom) {
     // create a function that checks the value of the checkbox, if box is checked stores yes, if unchecked stores no.
-    // 
   return `
     <div class="card">
 
@@ -39,11 +33,6 @@ function getRestroomTemplate(restroom) {
 
       <div class="card-reveal">
           <div class="row">
-
-                <div class="col s6"> 
-                  PLACEHOLDER FOR MAPS
-                </div>
-
                 <div class="col s6 restroom-info">
                     <input type="hidden" value=${restroom._id}>
                     <span class="card-title grey-text text-darken-4">${restroom.locationName}<i class="material-icons right">close</i></span>
@@ -54,7 +43,6 @@ function getRestroomTemplate(restroom) {
                     <p>Changing Station: ${restroom.changingStation}</p>
                     <p>Requires Purchase: ${restroom.reqPurchase}</p>
                     <p>Sanitary Products Available: ${restroom.sanitaryProducts}</p>
-
                     <button type="button" class="edit-submit-button btn waves-effect waves-light edit-button">Edit This Restroom</button>
                 </div>
           </div>    
@@ -76,5 +64,3 @@ const editBtnClickHandler = document.addEventListener('click', function(e){
     window.location=`/restrooms/edit/${restroomId}`;
   }
 });
-
-// <img class="activator" src="https://picsum.photos/1200/200">

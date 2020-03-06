@@ -4,7 +4,6 @@
 }
 .footer-copyright {
   margin: 0 10px;
-  /* background-color:rgba(238,110,115) !important; */
 }
 body {
   display: flex;
@@ -31,7 +30,7 @@ main {
   justify-content: center;
 }
 ::placeholder {
-  color: #524D46;
+  color: rgb(85, 82, 78);
 }
 .index-card-content {
   background-color: rgba(250,250,240,0.7);
@@ -89,5 +88,3 @@ main {
 .edit-submit-button {
   margin-left: 20px;
 }
-
-/* TODO Change edit-submit-button ID to class only */
