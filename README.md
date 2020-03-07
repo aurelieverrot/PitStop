@@ -3,6 +3,10 @@
 ### Version 1.0
 <hr>
 
+<p align="center">
+  <img src="https://git.generalassemb.ly/aurelieverrot/Project_1_PitStop/blob/master/assets/pitcrew-flag.png">
+</p>
+
 ### INTRODUCTION
     Life is full of surprises. And sometimes, it can be 
     really useful to know where the nearest restrooms are
@@ -13,7 +17,9 @@
     edit and delete restrooms to keep the list up to date!
 
 
-![Index](assets/Screen Shot Index.png)
+<p align="center">
+  <img width="850" height="450" src="https://git.generalassemb.ly/aurelieverrot/Project_1_PitStop/blob/master/assets/screenshot-index.png">
+</p>
 
 
 ### TECHNOLOGIES USED
