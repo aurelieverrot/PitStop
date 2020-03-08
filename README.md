@@ -4,7 +4,7 @@
 <hr>
 
 <p align="center">
-  <img src="https://git.generalassemb.ly/aurelieverrot/Project_1_PitStop/blob/master/assets/pitcrew-flag.png">
+  <img src="https://github.com/aurelieverrot/Project_1_PitStop/blob/master/assets/pitcrew-flag.png">
 </p>
 
 ### INTRODUCTION
@@ -18,7 +18,7 @@
 
 
 <p align="center">
-  <img width="850" height="450" src="https://git.generalassemb.ly/aurelieverrot/Project_1_PitStop/blob/master/assets/screenshot-index.png">
+  <img width="850" height="450" src="https://github.com/aurelieverrot/Project_1_PitStop/blob/master/assets/screenshot-index.png">
 </p>
 
 
@@ -48,7 +48,7 @@
     - Checkboxes on Create and Edit forms are not functional
 
 ### PROCESS
-![Models_erd](assets/Screen Shot Models and ERD.png)
+<a href='https://github.com/aurelieverrot/Project_1_PitStop/assets/project-planning.pdf'>
 
 
 
